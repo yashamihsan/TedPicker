@@ -7,8 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.gun0912.tedpicker.custom.adapter.BaseRecyclerViewAdapter;
+import com.squareup.picasso.Picasso;
+
+import java.io.File;
 
 
 /**
@@ -35,17 +37,10 @@ public class Adapter_SelectedPhoto extends BaseRecyclerViewAdapter<Uri, Adapter_
 
         Uri uri = getItem(position);
 
-
-
-        Glide.with(imagePickerActivity)
-                .load(uri.toString())
-             //   .override(selected_bottom_size, selected_bottom_size)
-                .dontAnimate()
-                .centerCrop()
+        Picasso.with(imagePickerActivity)
+                .load(new File(uri.toString()))
                 .error(R.drawable.no_image)
                 .into(holder.selected_photo);
-
-
 
 
         holder.iv_close.setTag(uri);

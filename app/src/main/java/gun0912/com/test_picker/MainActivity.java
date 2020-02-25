@@ -16,10 +16,11 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.gun0912.tedpicker.Config;
 import com.gun0912.tedpicker.ImagePickerActivity;
+import com.squareup.picasso.Picasso;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -124,9 +125,10 @@ public class MainActivity extends AppCompatActivity {
             View imageHolder = LayoutInflater.from(this).inflate(R.layout.image_item, null);
             ImageView thumbnail = (ImageView) imageHolder.findViewById(R.id.media_image);
 
-            Glide.with(this)
-                    .load(uri.toString())
-                    .fitCenter()
+            Picasso.with(this)
+                    .load(new File(uri.toString()))
+                    .fit()
+                    .error(com.gun0912.tedpicker.R.drawable.no_image)
                     .into(thumbnail);
 
             mSelectedImagesContainer.addView(imageHolder);

@@ -20,9 +20,10 @@ import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.gun0912.tedpicker.view.CustomSquareFrameLayout;
+import com.squareup.picasso.Picasso;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -173,17 +174,10 @@ public class GalleryFragment extends Fragment {
             if (holder.uri == null || !holder.uri.equals(mUri)) {
 
 
-                Glide.with(context)
-                        .load(mUri.toString())
-                        .thumbnail(0.1f)
-                                //.fit()
-                        .dontAnimate()
-                                //   .override(holder.mThumbnail.getWidth(), holder.mThumbnail.getWidth())
-                                //  .override(holder.root.getWidth(), holder.root.getWidth())
-                        .centerCrop()
+                Picasso.with(context)
+                        .load(new File(mUri.toString()))
                         .placeholder(R.drawable.place_holder_gallery)
                         .error(R.drawable.no_image)
-
                         .into(holder.mThumbnail);
                 holder.uri = mUri;
 
