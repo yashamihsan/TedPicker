@@ -66,6 +66,7 @@ public class CwacCameraFragment extends Fragment implements View.OnClickListener
     private static Config mConfig;
     View view;
     ImageButton btn_take_picture;
+    ImageButton btn_flash_toggle;
     View vShutter;
     CameraView cameraView;
     DrawingView drawingView;
@@ -73,9 +74,9 @@ public class CwacCameraFragment extends Fragment implements View.OnClickListener
 
     private ProgressDialog mProgressDialog;
 
-    /**
-     * @param config
-     */
+    public boolean isFlashOn = false;
+
+
     public static void setConfig(@Nullable Config config) {
         mConfig = config;
     }
@@ -150,7 +151,6 @@ public class CwacCameraFragment extends Fragment implements View.OnClickListener
             }
         });
 
-
         addSensorListener();
 
 
@@ -224,6 +224,26 @@ public class CwacCameraFragment extends Fragment implements View.OnClickListener
         btn_take_picture.setImageResource(mConfig.getCameraBtnImage());
         btn_take_picture.setBackgroundResource(mConfig.getCameraBtnBackground());
 
+        btn_flash_toggle = (ImageButton) view.findViewById(R.id.flash_toggle);
+        btn_flash_toggle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (isFlashOn){
+
+                    isFlashOn = false;
+                    btn_flash_toggle.setImageResource(R.drawable.ic_flash_off_24dp);
+                }
+                else {
+
+                    isFlashOn = true;
+                    btn_flash_toggle.setImageResource(R.drawable.ic_flash_on_24dp);
+                }
+
+                mConfig.setFlashOn(isFlashOn);
+
+            }
+        });
 
         vShutter = view.findViewById(R.id.vShutter);
 
@@ -553,6 +573,7 @@ public class CwacCameraFragment extends Fragment implements View.OnClickListener
         @Override
         public Camera.Parameters adjustPictureParameters(PictureTransaction xact, Camera.Parameters parameters) {
 
+            Log.i("Flash","FLash mode : "+mConfig.isFlashOn());
             if(mConfig.isFlashOn()){
                 parameters.setFlashMode(Camera.Parameters.FLASH_MODE_ON);
             }
