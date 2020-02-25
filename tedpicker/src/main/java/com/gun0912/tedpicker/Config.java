@@ -15,7 +15,7 @@ import android.support.annotation.StringRes;
 public class Config {
 
     private int toolbarTitleRes = R.string.toolbar_title;
-
+    private int toolbarBgColor;
     private int tabBackgroundColor;
     private int tabSelectionIndicatorColor;
 
@@ -24,7 +24,7 @@ public class Config {
     private int selectionLimit = Integer.MAX_VALUE;
     private int selectionMin = 0;
 
-    private int cameraHeight = R.dimen.ted_picker_camera_height;
+    private int cameraHeight = 0;
 
     private int cameraBtnImage = R.drawable.ic_camera;
     private int cameraBtnBackground = R.drawable.btn_bg;
@@ -103,6 +103,19 @@ public class Config {
 
 
         this.tabBackgroundColor = colorRes;
+
+    }
+
+    public int getToolbarBgColor() {
+        return toolbarBgColor;
+    }
+
+    public void setToolbarBgColor(@ColorRes int colorRes) {
+        if (colorRes <= 0)
+            throw new IllegalArgumentException("Invalid value for tabBackgroundColor");
+
+
+        this.toolbarBgColor = colorRes;
 
     }
 

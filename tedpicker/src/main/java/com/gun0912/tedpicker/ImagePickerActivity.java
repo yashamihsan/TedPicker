@@ -131,6 +131,9 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
             mSelectedImageEmptyMessage.setTextColor(ContextCompat.getColor(this, mConfig.getSelectedBottomColor()));
         }
 
+        if (mConfig.getToolbarBgColor() > 0) {
+            toolbar.setBackgroundColor(ContextCompat.getColor(this, mConfig.getToolbarBgColor()));
+        }
 
     }
 
