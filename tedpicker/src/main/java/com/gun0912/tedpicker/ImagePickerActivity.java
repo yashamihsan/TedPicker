@@ -50,7 +50,8 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
      * Key to persist the list when saving the state of the activity.
      */
 
-    public ArrayList<Uri> mSelectedImages;
+    public ArrayList<ImageObject> mSelectedImages;
+    public ArrayList<Uri> mSelectedImages2;
     protected Toolbar toolbar;
     View view_root;
     TextView mSelectedImageEmptyMessage;
@@ -149,12 +150,11 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
     private void setupFromSavedInstanceState(Bundle savedInstanceState) {
 
 
-        if (savedInstanceState != null) {
+        /*if (savedInstanceState != null) {
             mSelectedImages = savedInstanceState.getParcelableArrayList(EXTRA_IMAGE_URIS);
         } else {
             mSelectedImages = getIntent().getParcelableArrayListExtra(EXTRA_IMAGE_URIS);
-        }
-
+        }*/
 
         if (mSelectedImages == null) {
             mSelectedImages = new ArrayList<>();
@@ -167,9 +167,9 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        if (mSelectedImages != null) {
+        /*if (mSelectedImages != null) {
             outState.putParcelableArrayList(EXTRA_IMAGE_URIS, mSelectedImages);
-        }
+        }*/
 
     }
 
@@ -239,11 +239,13 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
             final String compressImg = SiliCompressor.with(this).compress(uri.getPath(), getExternalCacheDir());
             File file = new File(compressImg);
             Log.i("File","img size after: "+getSizeLengthImage(file.length()));
-            mSelectedImages.add(Uri.parse(compressImg));
+            mSelectedImages.add(new ImageObject(uri,Uri.parse(compressImg)));
+            Log.i("File","URI compress: "+Uri.parse(compressImg).toString());
         }
         else {
 
-            mSelectedImages.add(uri);
+            mSelectedImages.add(new ImageObject(uri));
+            Log.i("File","URI no compress: "+uri.toString());
         }
 
         adapter_selectedPhoto.updateItems(mSelectedImages);
@@ -263,8 +265,13 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
 
     public void removeImage(Uri uri) {
 
+        for (int i = 0; i < mSelectedImages.size(); i++) {
 
-        mSelectedImages.remove(uri);
+            if (mSelectedImages.get(i).getOriginalUri().equals(uri)){
+                mSelectedImages.remove(i);
+                break;
+            }
+        }
 
         adapter_selectedPhoto.updateItems(mSelectedImages);
 
@@ -272,13 +279,18 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
             mSelectedImageEmptyMessage.setVisibility(View.VISIBLE);
         }
         GalleryFragment.mGalleryAdapter.notifyDataSetChanged();
-
-
-
     }
 
     public boolean containsImage(Uri uri) {
-        return mSelectedImages.contains(uri);
+
+        for (int i = 0; i < mSelectedImages.size(); i++) {
+
+            if (mSelectedImages.get(i).getOriginalUri().equals(uri)){
+                return true;
+            }
+        }
+
+        return false;
     }
 
 
@@ -315,8 +327,12 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
             return;
         }
 
+        for (ImageObject photo : mSelectedImages) {
+            mSelectedImages2.add(photo.getCompressUri());
+        }
+
         Intent intent = new Intent();
-        intent.putParcelableArrayListExtra(EXTRA_IMAGE_URIS, mSelectedImages);
+        intent.putParcelableArrayListExtra(EXTRA_IMAGE_URIS, mSelectedImages2);
         setResult(Activity.RESULT_OK, intent);
         finish();
 

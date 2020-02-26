@@ -16,7 +16,7 @@ import java.io.File;
 /**
  * Created by TedPark on 16. 2. 20..
  */
-public class Adapter_SelectedPhoto extends BaseRecyclerViewAdapter<Uri, Adapter_SelectedPhoto.SelectedPhotoHolder> {
+public class Adapter_SelectedPhoto extends BaseRecyclerViewAdapter<ImageObject, Adapter_SelectedPhoto.SelectedPhotoHolder> {
 
 
 
@@ -35,15 +35,15 @@ public class Adapter_SelectedPhoto extends BaseRecyclerViewAdapter<Uri, Adapter_
     @Override
     public void onBindView(SelectedPhotoHolder holder, int position) {
 
-        Uri uri = getItem(position);
+        ImageObject photo = getItem(position);
 
         Picasso.with(imagePickerActivity)
-                .load(new File(uri.toString()))
+                .load(new File(photo.getOriginalUri().toString()))
                 .error(R.drawable.no_image)
                 .into(holder.selected_photo);
 
 
-        holder.iv_close.setTag(uri);
+        holder.iv_close.setTag(photo.getCompressUri());
 
 
 
