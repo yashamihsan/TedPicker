@@ -12,15 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c656fca-d09c-4696-8e71-31317f9a9411" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/glide_3_6_1.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/build.gradle" afterPath="$PROJECT_DIR$/tedpicker/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java" afterPath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/CwacCameraFragment.java" afterPath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/CwacCameraFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java" afterPath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/tedpicker.iml" afterPath="$PROJECT_DIR$/tedpicker/tedpicker.iml" />
     </list>
     <ignored path="TedPicker2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +46,30 @@
     <favorites_list name="TedPicker2" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ImagePickerActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2002">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1826">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2706,9 +2723,9 @@
         <option value="$PROJECT_DIR$/tedpicker/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/tedpicker/build.gradle" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/CwacCameraFragment.java" />
-        <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java" />
-        <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java" />
+        <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java" />
+        <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java" />
       </list>
     </option>
   </component>
@@ -3204,7 +3221,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5842167" sideWeight="0.5021482" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20676692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20676692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3517,17 +3534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding>
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -3540,8 +3546,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="236" column="40" selection-start-line="236" selection-start-column="40" selection-end-line="236" selection-end-column="40" />
+        <state relative-caret-position="-2002">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1826">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding />
         </state>
       </provider>

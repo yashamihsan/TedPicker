@@ -140,6 +140,10 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
             toolbar.setBackgroundColor(ContextCompat.getColor(this, mConfig.getToolbarBgColor()));
         }
 
+        if (mConfig.getToolbarBgDrawable() > 0) {
+            toolbar.setBackgroundResource(mConfig.getToolbarBgDrawable());
+        }
+
     }
 
     private void setupFromSavedInstanceState(Bundle savedInstanceState) {

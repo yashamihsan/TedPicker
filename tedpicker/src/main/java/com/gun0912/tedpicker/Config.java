@@ -15,7 +15,9 @@ import android.support.annotation.StringRes;
 public class Config {
 
     private int toolbarTitleRes = R.string.toolbar_title;
-    private int toolbarBgColor;
+    private int toolbarBgColor = 0;
+    private int toolbarBgDrawable = 0;
+
     private int tabBackgroundColor;
     private int tabSelectionIndicatorColor;
 
@@ -102,6 +104,14 @@ public class Config {
         this.toolbarTitleRes = toolbarTitleRes;
     }
 
+    public int getToolbarBgDrawable() {
+        return toolbarBgDrawable;
+    }
+
+    public void setToolbarBgDrawable(@DrawableRes int drawableRes) {
+        if (drawableRes <= 0) throw new IllegalArgumentException("Invalid value for toolbarBackgroundDrawable");
+        this.toolbarBgDrawable = drawableRes;
+    }
 
     public int getTabBackgroundColor() {
         return tabBackgroundColor;
@@ -122,7 +132,7 @@ public class Config {
 
     public void setToolbarBgColor(@ColorRes int colorRes) {
         if (colorRes <= 0)
-            throw new IllegalArgumentException("Invalid value for tabBackgroundColor");
+            throw new IllegalArgumentException("Invalid value for toolbarBackgroundColor");
 
 
         this.toolbarBgColor = colorRes;
