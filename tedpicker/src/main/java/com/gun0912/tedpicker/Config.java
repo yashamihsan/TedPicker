@@ -19,6 +19,8 @@ public class Config {
     private int tabBackgroundColor;
     private int tabSelectionIndicatorColor;
 
+    private boolean imageCompression = false;
+
     private int selectedBottomColor;
 
     private int selectionLimit = Integer.MAX_VALUE;
@@ -36,6 +38,14 @@ public class Config {
 
 
     private boolean flashOn = false;
+
+    public boolean isImageCompression() {
+        return imageCompression;
+    }
+
+    public void setImageCompression(boolean imageCompression) {
+        this.imageCompression = imageCompression;
+    }
 
     public int getCameraHeight() {
         return cameraHeight;

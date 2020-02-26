@@ -15,6 +15,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -28,7 +29,11 @@ import com.commonsware.cwac.camera.CameraHost;
 import com.commonsware.cwac.camera.CameraHostProvider;
 import com.gun0912.tedpicker.custom.adapter.SpacesItemDecoration;
 import com.gun0912.tedpicker.util.Util;
+import com.iceteck.silicompressorr.SiliCompressor;
 
+import java.io.File;
+import java.net.URI;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 
@@ -217,6 +222,8 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
 
     public void addImage(final Uri uri) {
 
+        File file1 = new File(uri.getPath());
+        Log.i("File","img size before : "+getSizeLengthImage(file1.length()));
 
         if (mSelectedImages.size() == mConfig.getSelectionLimit()) {
             String text = String.format(getResources().getString(R.string.max_count_msg), mConfig.getSelectionLimit());
@@ -224,8 +231,17 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
             return;
         }
 
+        if (mConfig.isImageCompression()) {
+            final String compressImg = SiliCompressor.with(this).compress(uri.getPath(), getExternalCacheDir());
+            File file = new File(compressImg);
+            Log.i("File","img size after: "+getSizeLengthImage(file.length()));
+            mSelectedImages.add(Uri.parse(compressImg));
+        }
+        else {
 
-        mSelectedImages.add(uri);
+            mSelectedImages.add(uri);
+        }
+
         adapter_selectedPhoto.updateItems(mSelectedImages);
 
 
@@ -303,4 +319,23 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
     }
 
 
+    public static String getSizeLengthImage(long size) {
+
+        DecimalFormat df = new DecimalFormat("0.00");
+
+        float sizeKb = 1024.0f;
+        float sizeMb = sizeKb * sizeKb;
+        float sizeGb = sizeMb * sizeKb;
+        float sizeTerra = sizeGb * sizeKb;
+
+
+        if(size < sizeMb)
+            return df.format(size / sizeKb)+ " Kb";
+        else if(size < sizeGb)
+            return df.format(size / sizeMb) + " Mb";
+        else if(size < sizeTerra)
+            return df.format(size / sizeGb) + " Gb";
+
+        return "";
+    }
 }

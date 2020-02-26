@@ -56,12 +56,11 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Config config = new Config();
-                config.setCameraHeight(R.dimen.app_camera_height);
-                config.setToolbarTitleRes(R.string.custom_title);
                 config.setSelectionMin(2);
                 config.setSelectionLimit(4);
                 config.setSelectedBottomHeight(R.dimen.bottom_height);
-                config.setFlashOn(true);
+                config.setFlashOn(false);
+                config.setImageCompression(true);
 
 
                 getImages(config);

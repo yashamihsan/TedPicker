@@ -46,6 +46,7 @@ import com.commonsware.cwac.camera.SimpleCameraHost;
 import com.gun0912.tedpicker.util.BitmapUtil;
 import com.gun0912.tedpicker.util.Util;
 import com.gun0912.tedpicker.view.DrawingView;
+import com.iceteck.silicompressorr.SiliCompressor;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -225,21 +226,19 @@ public class CwacCameraFragment extends Fragment implements View.OnClickListener
         btn_take_picture.setBackgroundResource(mConfig.getCameraBtnBackground());
 
         btn_flash_toggle = (ImageButton) view.findViewById(R.id.flash_toggle);
+        btn_flash_toggle.setBackgroundResource(mConfig.getCameraBtnBackground());
         btn_flash_toggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 if (isFlashOn){
-
                     isFlashOn = false;
                     btn_flash_toggle.setImageResource(R.drawable.ic_flash_off_24dp);
                 }
                 else {
-
                     isFlashOn = true;
                     btn_flash_toggle.setImageResource(R.drawable.ic_flash_on_24dp);
                 }
-
                 mConfig.setFlashOn(isFlashOn);
 
             }

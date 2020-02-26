@@ -6,16 +6,21 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Flash" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="File" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c656fca-d09c-4696-8e71-31317f9a9411" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/glide_3_6_1.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/tedpicker/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/build.gradle" afterPath="$PROJECT_DIR$/tedpicker/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java" afterPath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/CwacCameraFragment.java" afterPath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/CwacCameraFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/src/main/res/layout/picker_fragment_camera_cwac.xml" afterPath="$PROJECT_DIR$/tedpicker/src/main/res/layout/picker_fragment_camera_cwac.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java" afterPath="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tedpicker/tedpicker.iml" afterPath="$PROJECT_DIR$/tedpicker/tedpicker.iml" />
     </list>
     <ignored path="TedPicker2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,31 +52,7 @@
     <favorites_list name="TedPicker2" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CwacCameraFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/CwacCameraFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="238" column="36" selection-start-line="238" selection-start-column="36" selection-end-line="238" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tedpicker/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,6 +113,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="packageReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.iceteck.silicompressorr:silicompressor:2.2.2" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComIceteckSilicompressorrSilicompressor222Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -882,6 +868,11 @@
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.iceteck.silicompressorr:silicompressor:2.2.2" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComIceteckSilicompressorrSilicompressor222Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="validateSigningDebugAndroidTest" />
               </ExternalTaskPojo>
@@ -1563,6 +1554,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/tedpicker" />
                 <option name="name" value="packageReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.iceteck.silicompressorr:silicompressor:2.2.2" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/tedpicker" />
+                <option name="name" value="prepareComIceteckSilicompressorrSilicompressor222Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/tedpicker" />
@@ -2251,7 +2247,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\LENOVO\Documents\TedPicker2" value="6330667090304" />
+        <entry key="C:\Users\LENOVO\Documents\TedPicker2" value="6330673343292" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2694,16 +2690,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/tedpicker/build.gradle" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/res/layout/picker_grid_item_gallery_thumbnail.xml" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Adapter_SelectedPhoto.java" />
         <option value="$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-23/android.jar!/java/io/File.class" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/GalleryFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java" />
         <option value="$PROJECT_DIR$/tedpicker/build/intermediates/bundles/default/res/layout/picker_fragment_camera_cwac.xml" />
         <option value="$PROJECT_DIR$/tedpicker/build/intermediates/res/merged/release/layout/picker_fragment_camera_cwac.xml" />
-        <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java" />
-        <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/res/layout/picker_list_item_selected_thumbnail.xml" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/res/drawable/ic_check_24dp.xml" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/res/drawable/gallery_photo_selected.xml" />
@@ -2712,7 +2704,11 @@
         <option value="$PROJECT_DIR$/tedpicker/src/main/res/drawable/ic_flash_auto_24dp.xml" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/res/drawable/ic_flash_on_24dp.xml" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/tedpicker/build.gradle" />
         <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/CwacCameraFragment.java" />
+        <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java" />
+        <option value="$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -3192,7 +3188,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5842167" sideWeight="0.49785176" order="-1" side_tool="false" content_ui="tabs" />
@@ -3208,7 +3204,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5842167" sideWeight="0.5021482" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20676692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20676692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3249,24 +3245,6 @@
           <folding>
             <element signature="e#0#59#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tedpicker/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3342,17 +3320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding>
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tedpicker/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -3402,14 +3369,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/GalleryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="168" column="131" selection-start-line="168" selection-start-column="131" selection-end-line="168" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tedpicker/src/main/res/drawable/ic_check_24dp.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -3426,16 +3385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tedpicker/src/main/res/layout/picker_activity_main_pp.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3445,14 +3394,6 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="167" column="32" selection-start-line="167" selection-start-column="32" selection-end-line="167" selection-end-column="32" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/PagerAdapter_Picker.java">
@@ -3523,10 +3464,84 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tedpicker/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iceteck.silicompressorr/silicompressor/2.2.2/419d678f6b3adcc6f5c037f0a8b7d941a31de472/silicompressor-2.2.2-sources.jar!/com/iceteck/silicompressorr/SiliCompressor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/custom/adapter/BaseRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/GalleryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1646">
+          <caret line="168" column="131" selection-start-line="168" selection-start-column="131" selection-end-line="168" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/CwacCameraFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="238" column="36" selection-start-line="238" selection-start-column="36" selection-end-line="238" selection-end-column="36" />
+        <state relative-caret-position="72">
+          <caret line="626" column="24" selection-start-line="626" selection-start-column="24" selection-end-line="626" selection-end-column="24" />
+          <folding>
+            <element signature="e#17873#18110#0" expanded="true" />
+            <element signature="e#18109#18110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gun0912/com/test_picker/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tedpicker/src/main/java/com/gun0912/tedpicker/ImagePickerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="236" column="40" selection-start-line="236" selection-start-column="40" selection-end-line="236" selection-end-column="40" />
           <folding />
         </state>
       </provider>
