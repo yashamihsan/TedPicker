@@ -327,10 +327,11 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
             return;
         }
 
+        mSelectedImages2 = new ArrayList<>();
         for (ImageObject photo : mSelectedImages) {
             mSelectedImages2.add(photo.getCompressUri());
         }
-
+        
         Intent intent = new Intent();
         intent.putParcelableArrayListExtra(EXTRA_IMAGE_URIS, mSelectedImages2);
         setResult(Activity.RESULT_OK, intent);
