@@ -32,7 +32,6 @@ import com.gun0912.tedpicker.util.Util;
 import com.iceteck.silicompressorr.SiliCompressor;
 
 import java.io.File;
-import java.net.URI;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
@@ -60,7 +59,8 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
     TextView tv_selected_title;
     ViewPager mViewPager;
     TabLayout tabLayout;
-    PagerAdapter_Picker adapter;
+    PagerAdapter_Picker_with_Gallery adapter;
+    PagerAdapter_Only_Picker adapterOnlyPicker;
     Adapter_SelectedPhoto adapter_selectedPhoto;
 
     public static Config getConfig() {
@@ -174,9 +174,19 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
     }
 
     private void setupTabs() {
-        adapter = new PagerAdapter_Picker(this, getSupportFragmentManager());
-        mViewPager.setAdapter(adapter);
-        tabLayout.setupWithViewPager(mViewPager);
+
+        if (mConfig.isShowGallery()) {
+            adapter = new PagerAdapter_Picker_with_Gallery(this, getSupportFragmentManager());
+            mViewPager.setAdapter(adapter);
+            tabLayout.setupWithViewPager(mViewPager);
+        }
+        else {
+            adapterOnlyPicker = new PagerAdapter_Only_Picker(this, getSupportFragmentManager());
+            mViewPager.setAdapter(adapterOnlyPicker);
+            tabLayout.setupWithViewPager(mViewPager);
+            tabLayout.setVisibility(View.GONE);
+        }
+
 
 
         if (mConfig.getTabBackgroundColor() > 0)
@@ -327,12 +337,20 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
             return;
         }
 
-        mSelectedImages2 = new ArrayList<>();
-        for (ImageObject photo : mSelectedImages) {
-            mSelectedImages2.add(photo.getCompressUri());
-        }
-        
         Intent intent = new Intent();
+
+        mSelectedImages2 = new ArrayList<>();
+
+        for (ImageObject photo : mSelectedImages) {
+
+            if (mConfig.isImageCompression()) {
+                mSelectedImages2.add(photo.getCompressUri());
+            }
+            else {
+                mSelectedImages2.add(photo.getOriginalUri());
+            }
+        }
+
         intent.putParcelableArrayListExtra(EXTRA_IMAGE_URIS, mSelectedImages2);
         setResult(Activity.RESULT_OK, intent);
         finish();

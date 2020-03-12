@@ -31,15 +31,15 @@ public class Config {
     private int cameraHeight = 0;
 
     private int cameraBtnImage = R.drawable.ic_camera;
-    private int cameraBtnBackground = R.drawable.btn_bg;
+    private int cameraBtnBackground = R.drawable.btn_bg_black;
 
     private int selectedCloseImage = R.drawable.ic_clear;
     private int selectedBottomHeight = R.dimen.ted_picker_selected_image_height;
 
     private int savedDirectoryName = R.string.default_directory;
 
-
     private boolean flashOn = false;
+    private boolean showGallery = false;
 
     public boolean isImageCompression() {
         return imageCompression;
@@ -216,5 +216,13 @@ public class Config {
 
     public void setFlashOn(boolean flashOn){
         this.flashOn = flashOn;
+    }
+
+    public boolean isShowGallery() {
+        return showGallery;
+    }
+
+    public void setShowGallery(boolean showGallery) {
+        this.showGallery = showGallery;
     }
 }

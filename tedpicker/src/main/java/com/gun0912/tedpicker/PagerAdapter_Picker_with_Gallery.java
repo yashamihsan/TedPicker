@@ -10,13 +10,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 
-public class PagerAdapter_Picker extends FragmentPagerAdapter {
+public class PagerAdapter_Picker_with_Gallery extends FragmentPagerAdapter {
 
 
     String[] tab_titles;
 
 
-    public PagerAdapter_Picker(Context context, FragmentManager fm) {
+    public PagerAdapter_Picker_with_Gallery(Context context, FragmentManager fm) {
         super(fm);
             tab_titles = context.getResources().getStringArray(R.array.tab_titles);
 

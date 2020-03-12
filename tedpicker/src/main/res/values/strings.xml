@@ -18,6 +18,10 @@
         <item>Gallery</item>
     </string-array>
 
+    <string-array name="tab_title">
+        <item>Camera</item>
+    </string-array>
+
 
     <string name="toolbar_title">Choice Image</string>
     <string name="no_image">No Image</string>

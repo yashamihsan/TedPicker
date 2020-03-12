@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 config.setSelectedBottomHeight(R.dimen.bottom_height);
                 config.setFlashOn(false);
                 config.setImageCompression(true);
+                config.setShowGallery(true);
 
 
                 getImages(config);
