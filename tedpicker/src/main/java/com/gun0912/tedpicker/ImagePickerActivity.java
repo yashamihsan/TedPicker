@@ -278,7 +278,10 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
         if (mSelectedImages.size() == 0) {
             mSelectedImageEmptyMessage.setVisibility(View.VISIBLE);
         }
-        GalleryFragment.mGalleryAdapter.notifyDataSetChanged();
+
+        if (GalleryFragment.mGalleryAdapter != null) {
+            GalleryFragment.mGalleryAdapter.notifyDataSetChanged();
+        }
     }
 
     public boolean containsImage(Uri uri) {
